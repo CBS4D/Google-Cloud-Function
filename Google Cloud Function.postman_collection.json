@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "6f4ca4c1-25c0-4a6d-80cb-a21287437b0a",
+		"name": "Google Cloud Function",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "send email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"subject\": \"test subject\",\n\t\"sender_email\": \"shindec15@gmail.com\",\n\t\"recipient_email\": \"shindec15@gmail.com\",\n\t\"email_body\": \"Hi Chetan\\n This email is from gcloud email function.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/v1/send",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
